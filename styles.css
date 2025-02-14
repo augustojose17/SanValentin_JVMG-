@@ -182,6 +182,7 @@ p {
     line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
     color: #333; /* Color de texto oscuro pero suave */
     position: relative; /* Para efectos adicionales */
+    margin-top:10px;
 }
 
 .carta h1 {
