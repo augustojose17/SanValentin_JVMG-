@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Corazón es Tuyo</title>
+    <link rel="icon" href="assets/icons/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        .carta {
+            text-align: left;
+            padding: 15px;
+            background: #fff0f6;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .btn {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="songs/Sebastián Yatra - Tacones Rojos.mp3" type="audio/mp3">
+        Tu navegador no soporta el audio.
+    </audio>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let audio = document.getElementById("background-music");
+
+    // Intenta reproducir el audio
+    let playPromise = audio.play();
+
+    if (playPromise !== undefined) {
+        playPromise.then(() => {
+            console.log("Música reproduciéndose automáticamente.");
+        }).catch(error => {
+            console.log("Reproducción bloqueada. Se necesita interacción.");
+            // Intenta reproducir al primer clic en cualquier parte de la página
+            document.addEventListener("click", () => {
+                audio.play();
+            }, { once: true }); // Solo lo ejecuta una vez
+        });
+    }
+});
+
+
+    </script>
+
+    <div class="container">
+        <!-- Boton Modo Oscuro -->
+        <button id="toggleDarkMode" class="floating-button">
+            <i class="ri-sun-line"></i>
+        </button>
+
+        <!-- Sección Inicial -->
+        <section class="section active" id="inicio">
+            <h1>Mi Corazón es Tuyo ojitos lindos ❤️</h1>
+            <p>Desde que llegaste a mi vida mi bebe prechiosisisismaaaa, todo tiene más color y sentido🥺❤️. ¿Me
+                permites compartir algo especial contigo?</p>
+            <button class="btn" onclick="showSection('declaracion')">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                    fill="none">
+                    <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg> Siguiente</button>
+        </section>
+
+        <!-- Sección de Declaración -->
+        <section class="section" id="declaracion">
+            <h1>Para Jennifer Vanessa Mancia Giron</h1>
+            <p>Sabes que para mí no hay nadie ni habra ni existira alguien como tú mi amor. No es solo San Valentín,
+                eres la persona con la que quiero
+                compartir cada día de mi vida, cada risa y cada sueño. No importa la distancia, siempre voy a elegirte a
+                ti por que Te Amooooooo hasta el infinito y mas Allaaaaa. ¿Aceptas
+                ser mi San Valentín hoy mañana y siempre?</p>
+            <div class="button-container">
+                <button class="btn" onclick="showSection('aceptacion')">¡Sí! 💖</button>
+                <button class="btn" id="btnNo">No! 😢</button>
+            </div>
+        </section>
+
+        <!-- Sección de Aceptación -->
+        <section class="section" id="aceptacion">
+            <h1>¡Sabía que dirías que sí!</h1>
+            <div class="carta">
+                <h1>Esta carta es para ti</h1>
+                <p>Mi amor,
+
+                    No sé ni por dónde empezar, porque hay tantas cosas que quiero decirte ojitos lindos… pero lo
+                    primero es que te
+                    amoooo y muchooo. No es un "te amoooo" cualquiera, es un "te amooooooo" que significa que eres la
+                    persona con la que
+                    quiero estar los restos de mis dias pero a tu lado mi amor contigo, eres la persona a la que elijo
+                    cada día y la que hace que mi vida sea mucho más bonita.
+
+                    Desde que llegaste, todo ha sido diferente. Contigo los días son más especiales, hasta los más
+                    simples tienen algo lindo porque sé que estás en ellos. No importa si estamos hablando de cosas sin
+                    sentido, riéndonos de cualquier tontería o si solo estamos en silencio(besandonos jsjs🥺🙈❤️),
+                    sintiendo que el otro está
+                    ahí. Todo contigo se siente bien y estoy muy feliz por eso y por tenerte a ti mi amor.
+
+                    Me encanta la forma en que eres, con tus ocurrencias(las travesuras que se nos ocurren y que hacemos
+                    jsjsj🥺🙈❤️), con tus enojos chiquitos que a veces me dan
+                    risa y te hacen ven tan tiernaaaaaaa, con la manera en que me cuidas y me
+                    demuestras tu amor. A veces sé que dudas de ti misma, que sientes que no eres suficiente o que
+                    podrías hacer más, pero quiero que recuerdes siempre esto: para mí, eres más que suficiente. No
+                    tienes que hacer nada extraordinario para que te ame, porque ya lo hago con todo mi corazón, tal
+                    como eres vale mi amor.
+
+                    No quiero que esta sea solo una carta más. Quiero que cuando la leas, sientas un poquito de el amor
+                    inmenso que siento por ti.
+                    Que sepas que esto que tenemos es real, que yo estoy aquí, que quiero estar aquí y que, pase lo que
+                    pase, siempre voy a estar para ti. No solo en los momentos bonitos, sino también cuando necesites
+                    apoyo, cuando sientas que el mundo pesa demasiado o cuando solo quieras a alguien que te escuche sin
+                    juzgarte.
+
+                    Sé que no soy perfecto, que a veces fallo, pero lo que sí sé es que lo que siento por ti es real y
+                    sincero. No hay un solo día en
+                    que no piense en lo afortunado que soy por tenerte en mi vida mi amor.
+                    Y sabes quiero un futuro contigo a tu lado y solo contigo y esho solo lo podre lograr siempre y
+                    cuando tu y yo tengamos los mismos objetivos y quieras estar conmigo te amooooooo mi amor🥺❤️.
+
+                    Gracias por ser tú. Gracias por dejarme amarte y por amarme a tu manera. No cambiaría nada de lo que
+                    somos.
+
+                    Te amooooo, mi amor. Hoy, mañana y siempre.<br>
+
+                    Con todo mi corazón,<br>
+                    Tu Amorcito preciosho🥺❤️</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
