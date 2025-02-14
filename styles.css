@@ -34,10 +34,6 @@ html, body {
     height: 100%;
 }
 
-.section.active {
-    padding-top: 50px; /* Ajusta el valor según el corte */
-}
-
 body {
     background-color: var(--color-background);
     color: var(--color-text);
@@ -60,6 +56,7 @@ body {
     display: flex;
     opacity: 1;
     transform: translateY(0);
+    padding-top: 50px;
 }
 
 h1 {
