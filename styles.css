@@ -56,7 +56,7 @@ body {
     display: flex;
     opacity: 1;
     transform: translateY(0);
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 h1 {
@@ -176,13 +176,12 @@ p {
     border-radius: 10px; /* Esquinas redondeadas */
     padding: 20px; /* Espaciado interno */
     max-width: 600px; /* Ancho máximo para que no sea demasiado grande */
-    margin: 20px auto; /* Centrar la carta en la sección */
+    margin: 50px auto; /* Centrar la carta en la sección */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
     font-family: 'Georgia', serif; /* Fuente clásica para una carta */
     line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
     color: #333; /* Color de texto oscuro pero suave */
     position: relative; /* Para efectos adicionales */
-    margin-top:10px;
 }
 
 .carta h1 {
